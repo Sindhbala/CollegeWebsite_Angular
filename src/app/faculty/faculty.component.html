@@ -1,0 +1,32 @@
+
+<div class="image-container">
+    <img src="/assets/faculty.jpg" alt="Sample Image" class="img-fluid" />
+    <div class="text-overlay">OUR TEAMS</div>
+  </div>
+
+  <div class="text-container">
+    <p class="course-title">Exepert Instructor</p>
+  </div>
+ 
+
+<div class="row">
+    <div class="col-sm-3" *ngFor="let instructor of instructors">
+      <div class="card instructor-card" style="width: 18rem;">
+        <img class="card-img-top" [src]="instructor.image" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ instructor.name}}</h5>
+          
+          <p class="text-center">{{ instructor.designation}}</p>
+          <div class="social-icons text-center">
+            <a [href]="instructor.instagram" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i> 
+            </a>
+            <a [href]="instructor.twitter" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div> 
+       </div> 
+    </div>
+  </div>
+  

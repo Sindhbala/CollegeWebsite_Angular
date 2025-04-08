@@ -1,0 +1,11 @@
+.course-title{
+    font-size: 36px; /* टेक्स्ट बड़ा करें */
+    font-weight: bold; /* बोल्ड टेक्स्ट */
+    color: #007bff; /* नीले रंग का टेक्स्ट */
+    text-transform: uppercase; /* टेक्स्ट को कैपिटल में दिखाएं */
+    letter-spacing: 3px; /* अक्षरों के बीच स्पेस */
+    border-bottom: 3px solid #007bff; /* नीचे लाइन जोड़ें */
+    padding-bottom: 10px; /* बॉर्डर और टेक्स्ट के बीच स्पेस */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* हल्का टेक्स्ट शैडो */
+
+}

@@ -1,0 +1,57 @@
+
+.image-container {
+    position: relative;
+    width: 100%; /* कंटेनर की चौड़ाई पूरी स्क्रीन */
+    height: 500px; /* निश्चित ऊंचाई */
+    overflow: hidden; /* अतिरिक्त भाग को छिपाने के लिए */
+  }
+  
+  .image-container img {
+    width: 100%; /* इमेज की चौड़ाई पूरी स्क्रीन */
+    height: 100%; /* इमेज की ऊंचाई कंटेनर के बराबर */
+    object-fit: cover; /* इमेज को स्केल और क्रॉप करने के लिए */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* वर्टिकल सेंटर */
+    left: 50%; /* होरिजॉन्टल सेंटर */
+    transform: translate(-50%, -50%);
+    color: white; /* टेक्स्ट का रंग */
+    font-size: 60px; /* टेक्स्ट का साइज़ बड़ा करें */
+    font-weight: bold; /* टेक्स्ट को बोल्ड करें */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.842); /* टेक्स्ट पर शैडो जोड़ें */
+    letter-spacing: 5px; /* अक्षरों के बीच स्पेसिंग */
+    /* background: rgba(0, 0, 0, 0.5);  */
+    padding: 15px 30px; /* टेक्स्ट के चारों ओर स्पेस */
+    border-radius: 10px; /* बैकग्राउंड के कोनों को गोल करें */
+    text-transform: uppercase; /* टेक्स्ट को uppercase करें */
+  }
+  
+  
+
+h1{
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: white;
+    border-radius: 20 20px;
+    height: 80px;
+    margin-top: 99px;
+
+}
+p{
+    margin-top: 40px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    
+}
+
+h3{
+    color: darkblue;
+    text-align: center;
+    margin-top: 80px;
+    font-style: italic;
+}
+
+

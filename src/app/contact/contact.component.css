@@ -1,0 +1,66 @@
+.image-container {
+    position: relative;
+    width: 100%; /* कंटेनर की चौड़ाई पूरी स्क्रीन */
+    height: 700px; /* निश्चित ऊंचाई */
+    /* overflow: hidden; अतिरिक्त भाग को छिपाने के लिए */
+  }
+  
+img {
+    width: 100%; /* इमेज की चौड़ाई पूरी स्क्रीन */
+    height: 100%; /* इमेज की ऊंचाई कंटेनर के बराबर */
+    object-fit: cover;/* इमेज को स्केल और क्रॉप करने के लिए */
+    /* object-position: bottom; */
+    /* clip-path: inset(50% 0 0 0); */
+    /* object-position: top;  */
+  /* transform: translateY(-50%); */
+  }
+
+  .text-container {
+    display: flex; /* फ्लेक्स बॉक्स का उपयोग करें */
+    justify-content: center; /* होरिज़ॉन्टली सेंटर करें */
+    align-items: center; /* वर्टिकली सेंटर करें */
+    height: 80px; /* पूरे व्यूपोर्ट की ऊंचाई */
+    background-color: #f8f9fa; /* हल्का बैकग्राउंड रंग */
+  }
+  
+
+  .contact-title {
+    font-size: 36px; /* टेक्स्ट बड़ा करें */
+    font-weight: bold; /* बोल्ड टेक्स्ट */
+    color: #007bff; /* नीले रंग का टेक्स्ट */
+    text-transform: uppercase; /* टेक्स्ट को कैपिटल में दिखाएं */
+    letter-spacing: 3px; /* अक्षरों के बीच स्पेस */
+    border-bottom: 3px solid #007bff; /* नीचे लाइन जोड़ें */
+    padding-bottom: 10px; /* बॉर्डर और टेक्स्ट के बीच स्पेस */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* हल्का टेक्स्ट शैडो */
+  }
+
+  h1{
+    text-align: center;
+  }
+  /* .card {
+    margin: 10px 0;
+  }
+  
+  #map-image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button {
+    margin: 5px;
+  } */
+  h5{
+    color: rgb(8, 159, 218);
+  }
+  /* div{
+    color: aquamarine;
+  } */
+   .contact{
+      color: rgb(4, 146, 98);
+   }
+
+   /* ======================img============== */
+   
+  

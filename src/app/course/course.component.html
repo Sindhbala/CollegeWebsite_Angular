@@ -1,0 +1,23 @@
+<div class="container">
+    <!-- Image Banner -->
+    <div class="row mb-4">
+      <div class="col-12 p-5">
+        <div class="position-relative ">
+          <img src="/assets/course.jpg" alt="Courses Banner" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="courses-container">
+      <div class="course-card" *ngFor="let course of courses">
+        <img [src]="course.image" [alt]="course.title" />
+        <h3>{{ course.title }}</h3>
+        <button class="course-button">{{ course.buttonText }}</button>
+
+      </div>
+    </div>
+    
+    
+  </div>
+  

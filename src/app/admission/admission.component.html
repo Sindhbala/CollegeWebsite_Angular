@@ -1,0 +1,97 @@
+<div class="container">
+    <h2>College Admission Form</h2>
+    <form [formGroup]="admissionForm" (ngSubmit)="onSubmit()"> 
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text"  id="fullName" class="form-control" formControlName="fullName"  placeholder="Enter your full name"/>
+     
+        <div *ngIf="submitted && admissionForm.controls['fullName'].errors" class="error">
+          <small *ngIf="admissionForm.controls['fullName'].errors['required']">Full Name is required.</small>
+          <small *ngIf="admissionForm.controls['fullName'].errors['minlength']">Must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input 
+          type="email" 
+          id="email" 
+          class="form-control" 
+          formControlName="email" 
+          placeholder="Enter your email"
+        />
+        <div *ngIf="submitted && admissionForm.controls['email'].errors" class="error">
+          <small *ngIf="admissionForm.controls['email'].errors['required']">Email is required.</small>
+          <small *ngIf="admissionForm.controls['email'].errors['email']">Enter a valid email address.</small>
+        </div>
+      </div>
+  
+      <!-- Mobile -->
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input 
+          type="text" 
+          id="mobile" 
+          class="form-control" 
+          formControlName="mobile" 
+          placeholder="Enter your mobile number"
+        />
+        <div *ngIf="submitted && admissionForm.controls['mobile'].errors" class="error">
+          <small *ngIf="admissionForm.controls['mobile'].errors['required']">Mobile number is required.</small>
+          <small *ngIf="admissionForm.controls['mobile'].errors['pattern']">Enter a valid 10-digit mobile number.</small>
+        </div>
+      </div>
+  
+      <!-- Course -->
+      <div class="form-group">
+        <label for="course">Select Course:</label>
+        <select id="course" class="form-control" formControlName="course">
+          <option value="" disabled>Select your course</option>
+          <option value="BSc">B.Sc</option>
+          <option value="BA">B.A</option>
+          <option value="BCom">B.Com</option>
+          <option value="BTech">B.Tech</option>
+          <option value="research">M.A</option>
+        </select>
+        <div *ngIf="submitted && admissionForm.controls['course'].errors" class="error">
+          <small>Course selection is required.</small>
+        </div>
+      </div>
+  
+      <!-- Gender -->
+      <div class="form-group">
+        <label>Gender:</label><br />
+        <div>
+          <label>
+            <input type="radio" formControlName="gender" value="Male" /> Male
+          </label>
+          <label>
+            <input type="radio" formControlName="gender" value="Female" /> Female
+          </label>
+          <label>
+            <input type="radio" formControlName="gender" value="Other" /> Other
+          </label>
+        </div>
+        <div *ngIf="submitted && admissionForm.controls['gender'].errors" class="error">
+          <small>Gender selection is required.</small>
+        </div>
+      </div>
+  
+      <!-- Terms -->
+      <div class="form-group">
+        <label>
+          <input type="checkbox" formControlName="terms" /> I agree to the terms and conditions
+        </label>
+        <div *ngIf="submitted && admissionForm.controls['terms'].errors" class="error">
+          <small>You must accept the terms and conditions.</small>
+        </div>
+      </div>
+  
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary">Admission</button>
+    </form>
+  
+    
+  
